@@ -7,7 +7,7 @@ from sklearn.metrics import pairwise_distances_argmin_min
 from PIL import Image
 
 # Load wine data
-df_w = pd.read_excel("/Users/accountmanager/Desktop/Iron Hack/Final project/winequality-white.xls", engine="xlrd")
+df_w = pd.read_excel("/Final project/winequality-white.xls", engine="xlrd")
 df_w.insert(0, 'id', range(1, len(df_w) + 1))
 
 st.title("White Wine Recommender")
@@ -27,7 +27,8 @@ else:
     st.subheader("Wines matching your preferences")
     st.dataframe(filtered_wines)
 
-    image = Image.open("/Users/accountmanager/Desktop/vinoblanco.jpeg")
+    # Delete this row if  you do not want to display an image
+    image = Image.open("/vinoblanco.jpeg")
     st.image(image, use_column_width=True)
 
 "Just Below, another solution to help you find something new based on something you already know this time, you can enter the ID of a wine that you already know and it will give you an ID of another wine"
