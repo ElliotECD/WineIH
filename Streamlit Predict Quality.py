@@ -13,9 +13,9 @@ st.write('''
 This application is used to help you determine the quality of your wine
 ''')
 
-df_w = pd.read_excel("/Users/accountmanager/Desktop/Iron Hack/Final project/winequality-white.xls", engine="xlrd")
+df_w = pd.read_excel("/Final project/winequality-white.xls", engine="xlrd")
 
-image = Image.open("/Users/accountmanager/Desktop/Iron Hack/Vin_blanc.jpeg")
+image = Image.open("/Iron Hack/Vin_blanc.jpeg")
 st.image(image, use_column_width=True)
 
 st.write('Amount of wines per quality')
