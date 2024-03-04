@@ -15,6 +15,7 @@ This application is used to help you determine the quality of your wine
 
 df_w = pd.read_excel("/Final project/winequality-white.xls", engine="xlrd")
 
+# Delete this row if  you do not want to display an image
 image = Image.open("/Iron Hack/Vin_blanc.jpeg")
 st.image(image, use_column_width=True)
 
